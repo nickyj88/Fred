@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <h1>"Welcome to FRED!"</h1>
+
+  <form method="POST" action="/">
+    <input type="submit" class="btn btn-primary" value="Reload data">
+  </form>
+  <table class="table table-inverse span4">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Avg. Unemployment</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for observation in unemployment_rates %}
+        <tr>
+          <td>{{observation[0].year}}</td>
+          <td>{{ observation[1]|round(2) }}%</td>
+        </tr>
+      {% endfor %}  
+    </tbody>  
+  </table>
+
+{% endblock %}
