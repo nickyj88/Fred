@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 from views import *
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nickjames:monkeys@localhost/fred'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nickjames:#######@localhost/fred'
 
 if __name__ == "__main__":
   app.run(debug=True)
