@@ -6,12 +6,14 @@
 ```python 
 pip install virtualenv
 source venv/bin/activate
-pip install requirements.txt```
+pip install requirements.txt
+```
 
 #### And you will have the environment set up.
 #### From there you can run the app:
 ```python
-python app/fred.py```
+python app/fred.py
+```
 #### Load up localhost:5000 in browser.
 ##### Loading the home route will make a GET request, which queries the database and renders the average yearly unemployment rates from 1980-2015.
 
