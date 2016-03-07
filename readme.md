@@ -9,7 +9,7 @@ source venv/bin/activate
 pip install requirements.txt
 ```
 
-##### And you will have the environment set up.
+##### And you will have the environment set up. You will also need to have postgresql installed and supply the pg credentials to the fred.app file so that the application can run a postgres instance locally.
 
 ##### Using SQLAlchemy means I didn't have to use SQL to set up the DB (bless ORMs), but I have included a python script that would run the postgres commands to create the tables once you have the data collected from the FRED API and run a
 ```python
